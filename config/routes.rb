@@ -1,6 +1,6 @@
 Testify::Application.routes.draw do
 
-  get 'exceptions/:code', to: "exceptions#error"
+  match 'exceptions/:code', to: "exceptions#error"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
